@@ -25,7 +25,7 @@ See this link for more information: [Technical Q&A QA1133: Determining console u
 ```
 ---
 ###### 2  
-This command is reading the same data as the python version through IOReg, but native from bash:
+This command is reading from the same data as the python example ([1](https://github.com/erikberglund/macOSVariables/blob/master/macos_users.md#loggedin#1)) by asking the IORegistry natively from bash:
  
 ```bash
 ioreg -n Root -d1 -a | xpath '/plist/dict/key[.="IOConsoleUsers"]/following-sibling::array/dict/key[.="kCGSSessionOnConsoleKey"]/following-sibling::*[1][name()="true"]/../key[.="kCGSSessionUserNameKey"]/following-sibling::string[1]/text()' 2>/dev/null
