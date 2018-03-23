@@ -4,7 +4,7 @@ The following commands are used to interact with local users on macOS.
 
 ### Index
 
-* [LoggedIn](https://github.com/erikberglund/Scripts/blob/master/snippets/macos_directoryservices.md#uid-highest)
+* [LoggedIn](https://github.com/erikberglund/macOSVariables/blob/master/macos_users.md#loggedin)
 
 ## LoggedIn
 
