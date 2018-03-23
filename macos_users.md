@@ -10,10 +10,9 @@ The following commands are used to interact with local users on macOS.
 
 Returns the currently logged in user shortname.
 
-```
-There are multiple methods of getting the currently logged in user. 
-I have provided three common ways, where I recooned you use any of the first two.
-```
+> There are multiple methods of getting the currently logged in user.  
+> I have provided three common ways below, where I recommend you use either 1 or 2.
+
 ---
 ###### 1  
 This command uses the SystemConfiguration framework through Python to get the currently logged in user.  
