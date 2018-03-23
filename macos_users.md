@@ -15,6 +15,7 @@ There are multiple methods of getting the currently logged in user.
 I have provided three common ways, where I recooned you use any of the first two.
 ```
 ---
+###### 1  
 This command uses the SystemConfiguration framework through Python to get the currently logged in user.  
 
 See this link for more information: [Technical Q&A QA1133: Determining console user login status](https://developer.apple.com/library/content/qa/qa1133/_index.html)
@@ -23,12 +24,14 @@ See this link for more information: [Technical Q&A QA1133: Determining console u
 /usr/bin/python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");'
 ```
 ---
+###### 2  
 This command is reading the same data as the python version through IOReg, but native from bash:
  
 ```bash
 ioreg -n Root -d1 -a | xpath '/plist/dict/key[.="IOConsoleUsers"]/following-sibling::array/dict/key[.="kCGSSessionOnConsoleKey"]/following-sibling::*[1][name()="true"]/../key[.="kCGSSessionUserNameKey"]/following-sibling::string[1]/text()' 2>/dev/null
 ```
 ---
+###### 3  
 This command is reading the owner of the special file at /dev/console. 
  
 ```bash
