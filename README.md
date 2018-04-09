@@ -1,2 +1,3 @@
-# macOSVariables
-Snippets and commands useful when writing scripts for macOS
+# macOSBash
+
+Collection of Bash functions and commands for writing macOS scripts
