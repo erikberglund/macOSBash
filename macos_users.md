@@ -1,4 +1,4 @@
-# macOSVariables: Users 
+# macOSBash: Users 
 
 The following commands are used to interact with local users on macOS.
 
