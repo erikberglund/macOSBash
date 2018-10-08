@@ -4,9 +4,9 @@ The following commands are used to interact with local users on macOS.
 
 ### Index
 
-* [LoggedIn](https://github.com/erikberglund/macOSVariables/blob/master/macos_users.md#loggedin)
+* [Console User](https://github.com/erikberglund/macOSVariables/blob/master/macos_users.md#loggedin)
 
-## LoggedIn
+## Console User
 
 How to return the currently logged in console user shortname.
 
