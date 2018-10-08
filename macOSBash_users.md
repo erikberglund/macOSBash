@@ -5,6 +5,8 @@ The following commands are used to interact with local users on macOS.
 ### Index
 
 * [Console User](https://github.com/erikberglund/macOSBash/blob/master/macOSBash_users.md#console-user)
+* [UID Highest](https://github.com/erikberglund/macOSBash/blob/master/macOSBash_users.md#uid-highest)
+
 
 ## Console User
 
@@ -46,4 +48,20 @@ Example Output:
 
 ```console
 erikberglund
+```
+
+## UID Highest
+
+How to return the highest used UID in the local user database.
+
+---
+
+```bash
+dscl /Local/Default -list /Users UniqueID | awk '{ if ( uid < $2 ) uid=$2 } END { print uid }'
+```
+---
+Example Output:
+
+```console
+505
 ```
