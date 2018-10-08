@@ -4,7 +4,7 @@ The following commands are used to interact with local users on macOS.
 
 ### Index
 
-* [Console User](https://github.com/erikberglund/macOSVariables/blob/master/macos_users.md#loggedin)
+* [Console User](https://github.com/erikberglund/macOSBash/blob/master/macOSBash_users.md#console-user)
 
 ## Console User
 
